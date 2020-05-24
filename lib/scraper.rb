@@ -16,7 +16,7 @@ class Scraper
       course.schedule =element.css(".date").text
       course.description =element.css("p").text
     end
-    
+    binding.pry
   end
   
   
