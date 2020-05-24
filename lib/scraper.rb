@@ -12,7 +12,7 @@ class Scraper
     # binding.pry
     doc.css(".post").each do |element|
       course =Course.new
-      course.title =element.css("h2")
+      course.title =element.css("h2").text
       course.schedule =element.css(".date")
       course.description =element.css("p")
     end
