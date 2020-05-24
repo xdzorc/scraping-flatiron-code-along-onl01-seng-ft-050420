@@ -14,7 +14,7 @@ class Scraper
       course =Course.new
       course.title =element.css("h2")
       course.schedule =element.css(".date")
-      course.
+      course.description =element.css("p")
     end
     
   end
