@@ -13,8 +13,8 @@ class Scraper
     doc.css(".post").each do |element|
       course =Course.new
       course.title =element.css("h2").text
-      course.schedule =element.css(".date")
-      course.description =element.css("p")
+      course.schedule =element.css(".date").text
+      course.description =element.css("p").text
     end
     
   end
