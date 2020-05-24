@@ -9,6 +9,8 @@ class Scraper
   def get_page 
     doc =Nokogiri::HTML(open(url))
     
+    binding.pry
+    
   end
   
   
