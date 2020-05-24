@@ -16,7 +16,7 @@ class Scraper
     self.get_page.css(".post")
   end
   
-  def get_courses
+  def make_courses
       doc.css(".post").each do |element|
       course =Course.new
       course.title =element.css("h2").text
